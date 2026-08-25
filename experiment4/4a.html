@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors</title>
+
+    <style>
+        
+        h1 {
+            color: blue;
+        }
+
+        /* ID selector */
+        #special {
+            color: red;
+        }
+
+        /* Class selector */
+        .highlight {
+            background-color: yellow;
+        }
+
+        /* Group selector */
+        h2, p {
+            font-family: Arial;
+        }
+
+        /* Universal selector */
+        * {
+            box-sizing: border-box;
+        }
+
+
+        /* 2. COMBINATOR SELECTORS */
+
+        /* Descendant selector */
+        div p {
+            color: green;
+        }
+
+        /* Child selector */
+        div > span {
+            color: purple;
+        }
+
+        /* Adjacent sibling selector */
+        h2 + p {
+            font-weight: bold;
+        }
+
+        /* General sibling selector */
+        h2 ~ p {
+            background-color: lightgray;
+        }
+
+
+        /* 3. PSEUDO-CLASS SELECTOR */
+
+        a:hover {
+            color: red;
+        }
+
+        input:focus {
+            background-color: lightyellow;
+        }
+
+
+        /* 4. PSEUDO-ELEMENT SELECTOR */
+
+        p::first-letter {
+            font-size: 30px;
+            color: blue;
+        }
+
+        p::first-line {
+            font-weight: bold;
+        }
+
+
+        /* 5. ATTRIBUTE SELECTOR */
+
+        input[type="text"] {
+            border: 2px solid green;
+        }
+
+        input[type="email"] {
+            border: 2px solid orange;
+        }
+    </style>
+</head>
+<body>
+    <p align="right"><b>P.Divya Spandana<br>24K61A1285</br></b></p>
+   <h1>CSS Selectors Example</h1>
+    <h2 id="special">Simple Selectors</h2>
+    <p class="highlight">
+        This paragraph uses a class selector.
+    </p>
+    <p>
+        This paragraph demonstrates element and pseudo-element selectors.
+    </p>
+    <div>
+        <p>Descendant selector</p>
+        <span>Child selector</span>
+    </div>
+
+    <h2>Combinator Selectors</h2>
+
+    <p>Adjacent sibling paragraph</p>
+    <p>General sibling paragraph</p>
+
+    <h2>Pseudo-Class</h2>
+
+    <a href="#">Move the mouse over this link</a>
+    <br><br>
+
+    <input type="text" placeholder="Enter Name">
+    <br><br>
+
+    <input type="email" placeholder="Enter Email">
+
+</body>
+</html>
