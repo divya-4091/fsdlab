@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RegExp Object</title>
+</head>
+<body>
+
+<p align="right"><b>P.Divya Spandana <br>24K61A1285</br></b></p>
+
+<h2>RegExp Object Example</h2>
+
+<script>
+let pattern = /JavaScript/i;
+let text = "I am learning JavaScript";
+
+document.write("Pattern: " + pattern + "<br>");
+document.write("Test Result: " + pattern.test(text) + "<br>");
+
+let result = pattern.exec(text);
+document.write("Matched Value: " + result);
+</script>
+
+</body>
+</html>
